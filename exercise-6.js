@@ -23,7 +23,7 @@ class AreaCalculator {
       return el.side * el.side
     } else if (el instanceof Rectangle) {
       return el.width * el.height
-    } else { return Math.PI * (el.radius + el.radius) }
+    } else { return (el.radius*el.radius) * Math.PI }
   }
 }
 
